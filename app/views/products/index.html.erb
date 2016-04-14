@@ -1,20 +1,19 @@
-<p id="notice"><%= notice %></p>
+<h1 class="title">Recent Products</h1>
 
-<h1 id="title">Recent Products</h1>
-
-  <% @products.each do |product| %>
-    <div class="panel panel-default">
-      <div class="panel-heading"><%= product.image_url %></div>
-      <div class="panel-body">
-        <h4><%= link_to product.name, product %></h4>
-        <!-- <%= product.description %> -->
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <%= image_tag(product.image_url, class: "img-responsive")%>
+      <h4 class="heading"><%= link_to product.name, product %></h4>
+      <!-- <%= product.description %> -->
     </div>
+  </div>
     <!-- <%= link_to 'Show', product %>
     <%= link_to 'Edit', edit_product_path(product) %>
     <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> -->
-  <% end %>
+    <% end %>
+</div>
+  
+  <br>
 
-<br>
-
-<div id="title"><%= link_to 'New Product', new_product_path %></div>
+  <div id="title"><%= link_to 'New Product', new_product_path %></div>
