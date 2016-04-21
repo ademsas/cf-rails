@@ -6,4 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Product.create(name: "seed generated product", description: "I also created this product without using the HTML form!")
+Product.create(name: "seed generated product", description: "I also created this product without using the HTML form!", image_url: "https://images.unsplash.com/photo-1460400355256-e87506dcec4f")
+
+Product.create(name: "second seed generated product", description: "I also created this product without using the HTML form!", image_url: "https://images.unsplash.com/photo-1437326516294-01d0da392e11")
