@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
         search_term = parms=[:q]
         @products = Product.where("name LIKE ?", "%#{search_term}%")
       else
-        @products = Product.limit(3)
+        search_term = parms=[:q]
         @products = Product.where("name ilike ?", "%#{search_term}%")
       end
     end
