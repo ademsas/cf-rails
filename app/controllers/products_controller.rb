@@ -2,7 +2,15 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   def index
-    @products = Product.limit(3)
+    if Rails.env.development?
+      if params[:q]
+        search_term = parms=[:q]
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      else
+        @products = Product.limit(3)
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      end
+    end
   end
 
   def show

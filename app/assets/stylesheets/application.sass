@@ -1,6 +1,51 @@
 $primary:  #96C5A4
+$light-grey: #E0E0E0
 
 @import "bootstrap-sprockets"
 @import "bootstrap"
+
+.wrapper
+	margin: 0 auto
+	max-width: 90%
+	width: 960px
+
+.wrapper_search
+	min-width: 20%
+	width: 250px
+
+.hidden
+	display: none
+
+.search
+	margin-top: -.8em
+
 @import "static_pages"
 @import "products"
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea
+	width: 100%
+	max-width: 100%
+	height: 3em
+	border: 2px solid $light-grey
+	padding: 1em
+	margin: .5em 0 2em 0
+
+textarea
+	min-height: 20em
+
+input[type="submit"]
+	outline: none
+	background: transparent
+	border: 2px solid $light-grey
+	text-align: center
+	font-size: 1em
+	color: $primary
+	text-decoration: none
+	padding: 1em 2em
+	&:hover
+		border: 2px solid $primary
+		color: $primary
