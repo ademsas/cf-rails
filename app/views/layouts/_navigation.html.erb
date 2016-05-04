@@ -19,9 +19,9 @@
         <li><%= link_to 'Orders', orders_path %></li>
       </ul>
         <%= form_tag("/products", method:"GET", class: "navbar-form navbar-right") do %>
-        <div class="form-group search">
+        <div class="form-group">
           <%= label_tag(:q, "Search for:", class: "hidden") %>
-          <%= text_field_tag(:q, "", placeholder: "Search") %>
+          <%= text_field_tag(:q, "", placeholder: "Search", class: "form-control") %>
           <%= submit_tag("Search", class: "hidden") %>
         </div>
         <% end %>
