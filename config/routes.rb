@@ -6,4 +6,6 @@
 
   get 'static_pages/about', path: 'about'
   get 'static_pages/contact', path: 'contact'
+
+  post 'static_pages/thank_you'
 end
