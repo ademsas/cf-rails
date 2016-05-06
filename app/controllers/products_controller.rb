@@ -2,7 +2,6 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   def index
-
     if (Environment.current == Environment.DEVELOPMENT) {
       if params[:q]
         search_term = params[:q]
