@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 ## Added Gems ##
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
