@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).on('ready page:load', function(){
+$(document).ready(function() {
   setTimeout(function() {
       $(".alert").fadeOut("fast", function() {
           $(this).remove();
@@ -26,9 +26,11 @@ $(document).on('ready page:load', function(){
     e.preventDefault();
     $(".alert").remove();
   })
+});
 
-  $('.rating').raty( { path: '../assets/raty', scoreName: 'comment[rating]' });
-  $('.rated').raty({ path: '../assets/raty',
+$(document).on('ready page:load', function(){ 
+  $('.rating').raty( { path: '/assets/raty', scoreName: 'comment[rating]' });
+  $('.rated').raty({ path: '/assets/raty',
     readOnly: true,
     score: function() {
       return $(this).attr('data-score');
