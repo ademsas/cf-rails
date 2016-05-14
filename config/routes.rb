@@ -15,4 +15,6 @@
   get 'static_pages/contact', path: 'contact'
 
   post 'static_pages/thank_you'
+
+  post 'payments/create'
 end
