@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'devise'
 gem 'cancancan'
 gem 'will_paginate'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug'
