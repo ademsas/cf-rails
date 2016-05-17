@@ -3,8 +3,11 @@ require 'rails_helper'
 describe UsersController, type: :controller do
 
 	before do
-		@user = User.create!(email: "benclarke018@gmail.com", password: "testpassed123")
-		@user1 = User.create!(email: "ben@upliftingmedia.co.uk", password: "timeforatest")
+		# @user = User.create!(email: "benclarke018@gmail.com", password: "testpassed123")
+		# @user1 = User.create!(email: "ben@upliftingmedia.co.uk", password: "timeforatest")
+		@user = FactoryGirl.create(:user)
+		@user1 = FactoryGirl.create(:user)
+		@admin = FactoryGirl.create(:admin)
 	end
 
 
@@ -29,6 +32,7 @@ describe UsersController, type: :controller do
 		context "cannot access second user show page" do
       it "redirects to root" do
         get :show, id: @user1.id
+        expect(response).to have_http_status(302)
         expect(response).to redirect_to(root_path)
       end
     end
