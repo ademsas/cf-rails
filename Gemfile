@@ -23,6 +23,10 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+	gem 'spork-rails'
+	gem 'guard-spork'
 end
 
 group :development do
