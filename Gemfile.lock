@@ -36,8 +36,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    angularjs-rails (1.5.5)
     arel (6.0.3)
-    autoprefixer-rails (6.3.6)
+    autoprefixer-rails (6.3.6.1)
       execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
@@ -46,8 +47,8 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    byebug (9.0.0)
-    cancancan (1.13.1)
+    byebug (9.0.3)
+    cancancan (1.14.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.1)
@@ -60,7 +61,7 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
-    devise (4.1.0)
+    devise (4.1.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.1)
@@ -110,7 +111,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
-    listen (3.1.4)
+    listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
@@ -122,13 +123,13 @@ GEM
     method_source (0.8.2)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
-    multi_json (1.12.0)
+    minitest (5.9.0)
+    multi_json (1.12.1)
     nenv (0.3.0)
     netrc (0.11.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    notiffany (0.0.8)
+    notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
@@ -231,7 +232,7 @@ GEM
       rest-client (~> 1.4)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.3)
+    tilt (2.0.4)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -254,6 +255,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   cancancan

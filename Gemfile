@@ -18,6 +18,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'will_paginate'
 gem 'stripe'
+gem 'angularjs-rails'
 
 group :development, :test do
   gem 'byebug'
