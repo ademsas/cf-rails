@@ -8,7 +8,7 @@
 	<strong>Colour</strong>
 	<p class="color"><%= @product.color %></p>
 
-	<div class="image"><%= image_tag @product.image_url, class: "img-responsive"%></div>
+	<div class="image"><%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %></div>
 
 	<%= form_tag "/payments/create" do %>
 		<%= render "stripe_checkout_button" %>
