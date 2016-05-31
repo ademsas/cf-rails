@@ -19,6 +19,7 @@ gem 'cancancan'
 gem 'will_paginate'
 gem 'stripe'
 gem 'angularjs-rails'
+gem 'dalli'
 
 group :development, :test do
   gem 'byebug'
