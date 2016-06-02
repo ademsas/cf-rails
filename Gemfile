@@ -20,6 +20,7 @@ gem 'will_paginate'
 gem 'stripe'
 gem 'angularjs-rails'
 gem 'dalli'
+gem 'redis-rails'
 
 group :development, :test do
   gem 'byebug'
