@@ -1,4 +1,4 @@
-var app = angular.module('shop', ['ngResource']);
+var app = angular.module('orders', ['ngResource']);
 
 $(document).on('ready page:load', function(){
 	angular.bootstrap(document.body, ['shop'])
