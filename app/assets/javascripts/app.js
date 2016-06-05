@@ -1,7 +1,7 @@
 var app = angular.module('shop', ['ngResource']);
 
-$(document).on('ready page:load', function(){ 
-	angular.bootstrap (document.body, ['shop'])
+$(document).on('ready page:load', function(){
+	angular.bootstrap(document.body, ['shop'])
 });
 
 app.factory('models', ['$resource', function($resource){
